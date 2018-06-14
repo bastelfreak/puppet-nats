@@ -2,16 +2,20 @@ GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.5)
-    facter (2.4.6)
-    hiera (3.2.1)
-    json_pure (1.8.3)
+    facter (2.5.1)
+    fast_gettext (1.1.2)
+    hiera (3.4.3)
+    locale (2.1.2)
     metaclass (0.0.4)
     mocha (1.2.1)
       metaclass (~> 0.0.1)
-    puppet (4.7.0)
-      facter (> 2.0, < 4)
-      hiera (>= 2.0, < 4)
-      json_pure (~> 1.8)
+    multi_json (1.13.1)
+    puppet (5.5.1)
+      facter (> 2.0.1, < 4)
+      fast_gettext (~> 1.1.2)
+      hiera (>= 3.2.1, < 4)
+      locale (~> 2.1)
+      multi_json (~> 1.10)
     puppet-lint (2.0.2)
     puppet-syntax (2.1.1)
       rake
@@ -41,5 +45,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  puppet
+  puppet (>= 5.3.4)
   puppetlabs_spec_helper
+
+BUNDLED WITH
+   1.16.1
